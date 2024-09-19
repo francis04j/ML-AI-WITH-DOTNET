@@ -31,3 +31,4 @@
 /Users/francisadediran/development/myMLApp/WebApplication1/obj/Debug/net8.0/WebApplication1.pdb
 /Users/francisadediran/development/myMLApp/WebApplication1/obj/Debug/net8.0/WebApplication1.genruntimeconfig.cache
 /Users/francisadediran/development/myMLApp/WebApplication1/obj/Debug/net8.0/ref/WebApplication1.dll
+/Users/francisadediran/development/myMLApp/WebApplication1/obj/Debug/net8.0/WebApplication1.sourcelink.json
