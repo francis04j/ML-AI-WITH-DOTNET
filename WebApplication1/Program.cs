@@ -1,4 +1,8 @@
+using WebApplication1.BabyDev;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<IBabyDevService, BabyDevService>();
+builder.Services.AddScoped<IBabyDevDBClient, BabyDevDBClient>();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -34,6 +38,13 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast")
+    .WithOpenApi();
+
+app.MapGet("/babydevforecast/{ageRangeStart}/{ageRangeEnd}", (IBabyDevService babyDevService, int ageRangeStart, int ageRangeEnd) =>
+    {
+        return babyDevService.GetBabyDev(ageRangeStart, ageRangeEnd);
+    })
+    .WithName("GetBabyDevForecast")
     .WithOpenApi();
 
 app.Run();
