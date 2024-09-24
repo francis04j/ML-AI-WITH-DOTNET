@@ -2,6 +2,8 @@
 bin/
 obj/
 
+WebApplication1/
+
 # User-specific files
 *.rsuser
 *.suo
