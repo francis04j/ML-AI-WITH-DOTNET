@@ -50,3 +50,5 @@ ScaffoldingReadMe.txt
 
 # Azure Web Apps log directory
 azuredeploy.json
+
+.DS_Store
